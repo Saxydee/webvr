@@ -1,0 +1,38 @@
+<DOCTYPE>
+<html>
+
+<head>
+
+<script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+</head>
+  </head>
+  <body>
+    <a-scene>
+    <a-plane rotation="90 0 0" color="black" width="5" height="5" scale="2 2 2">
+    </a-plane>
+
+    <a-curvedimage src="img/asl.jpg" height="8" radius="4.5" theta-length="180"  rotation="0 150 0"
+    scale="5 5 5"
+    position="0 10 -10"></a-curvedimage>
+      <a-sky color="blue" rotation="0 -130 0">
+         
+      </a-sky>
+
+       <a-plane src="https://cdn.aframe.io/a-painter/images/floor.jpg" rotation="-90 45 0" width="30" height="30"  repeat=" 5 5 0"
+   ></a-plane>
+   <a-sound src="audio/clean.mp3" autoplay="true" position="-3 5 -4" loop="indefinite">
+     
+   </a-sound>
+   <a-entity fog="type: linear; color: #AAA"></a-entity>
+
+      
+      <a-camera position="0 4 -5 ">
+       <a-animation attribute="position" begin="click" to="0 5 3" direction="alternate" dur="250" repeat="indefinite" ></a-animation>
+
+      <a-cursor>
+      </a-cursor>
+      
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
